@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./kalkulator1.css">
+
+
+</head>
+<body>
+    <div class="col-md-12 text-center" style="margin-top: 30%;">
+      <input id="angka1" type="text" placeholder="angka 1" value="">
+      <input id="angka2" type="text" placeholder="angka 2" value="">
+
+    </div>
+      <div class="col-md-12 text-center" >
+        <br/>
+
+       
+     <div class="col-md-12 text-center">
+            <br/>
+            <button id ="button1" type="button" class="btn btn-primary">*</button>
+            <button id ="button2" type="button" class="btn btn-primary">+</button>
+            <button id ="button3" type="button" class="btn btn-primary">/</button>
+            <button id ="button4" type="button" class="btn btn-primary">%</button>
+            <button id ="button5" type="button" class="btn btn-primary">-</button>
+         </div>
+         <h2></h2>
+      <script>
+          document.getElementById("button1").addEventListener("click",function(e){
+           var a = document.getElementById("angka1").value; 
+           var b = document.getElementById("angka2").value;
+            var hasil = Number(a)*Number(b);
+            document.querySelector("h2").textContent = hasil;
+          })
+          document.getElementById("button2").addEventListener("click",function(e){
+           var a = document.getElementById("angka1").value; 
+           var b = document.getElementById("angka2").value;
+            var hasil = Number(a)+Number(b);
+            document.querySelector("h2").textContent = hasil;
+          })
+          document.getElementById("button3").addEventListener("click",function(e){
+           var a = document.getElementById("angka1").value; 
+           var b = document.getElementById("angka2").value;
+            var hasil = Number(a)/Number(b);
+            document.querySelector("h2").textContent = hasil;
+          })
+          document.getElementById("button4").addEventListener("click",function(e){
+           var a = document.getElementById("angka1").value; 
+           var b = document.getElementById("angka2").value;
+            var hasil = Number(a)%Number(b);
+            document.querySelector("h2").textContent = hasil;
+          })
+          document.getElementById("button5").addEventListener("click",function(e){
+           var a = document.getElementById("angka1").value; 
+           var b = document.getElementById("angka2").value;
+            var hasil = Number(a)-Number(b);
+            document.querySelector("h2").textContent = hasil;
+          })
+
+
+      </script>    
+
+
+    </body>
+</html>
